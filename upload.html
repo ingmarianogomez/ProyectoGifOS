@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>gif.OS</title>
+        <LINK  id="estilosUpload" rel=StyleSheet href="StyleUpload.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+        <header class="degrade letraContraste">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </header>
+
+        <div class="logoUpload margen primerMargen">
+            <a href="index.html"><img class ="flechaVolver" src="assets/arrow.svg" alt="volverAtras"></a>
+            <img id="T2" src="assets/gifOF_logo.png" alt="Logo Normal">
+        </div>
+
+
+        <section class="buscador anchoVentanas" id="crearGuifos">
+            <h2 class="degrade letraContraste letraCajita">
+                Crear Guifos
+            </h2>
+                <div>
+                    <h2><img src="assets/window_img.png" alt="logoWindow">Aquí podrás crear tus propios guifos</h2>
+                </div>
+                <div class="parrafoCrear">
+                    Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:
+                    <ul>
+                        <li><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                        <li><b>2)</b> Capturar tu momento guifo</li>
+                        <li><b>3)</b> Revisar el momento</li>
+                        <li><b>4)</b> Listo para subir y compartir!</li>
+                    </ul>
+                    ¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?
+                </div>
+                <div class="botonera">
+                    <button onclick="botonCerrarVentana()" class="botonCancelar">Cancelar</button>
+                    <button id="comenzar" class="botonComenzar separarBotones">Comenzar</button>
+                </div>
+        </section>
+
+        <section class="buscador anchoVentanas" id="chequeoAntes">
+            <h2 class="degrade letraContraste letraCajita">
+                Un Chequeo antes de Empezar
+                <img onclick="botonCerrarVentana()" src="assets/close.svg" alt="cerrarVentanas">
+            </h2>
+            <div>
+                <video id="videoVivo">
+                </video>
+            </div>
+            <div class="botonera">
+                <button class="botonComenzar logoBoton"><img src="assets/camera.svg" alt="camera"></button>
+                <button class="botonComenzar" id="capturar">Capturar</button>
+            </div>
+        </section>
+
+        <section class="buscador anchoVentanas" id="capturaGuifo">
+            <h2 class="degrade letraContraste letraCajita">
+                Capturando Tu Guifo
+                <img onclick="botonCerrarVentana()" src="assets/close.svg" alt="cerrarVentanas">
+            </h2>
+            <div>
+                <img id="videoGrabado" src="assets/1.jpg" alt="Imagen del Guifo">
+            </div>
+            <div class="botonera">
+                <button class="logoBoton botonCaptura"><img src="assets/recording.svg" alt="grabando"></button>
+                <button class="botonCaptura botonCapturaTamano" id="listo">Listo</button>
+            </div>
+        </section>
+
+        <section class="buscador anchoVentanas" id="vistaPrevia">
+            <h2 class="degrade letraContraste letraCajita">
+                Vista Previa
+                <img onclick="botonCerrarVentana()" src="assets/close.svg" alt="cerrarVentanas">
+            </h2>
+            <div>
+                <img id="videoGrabado2" src="assets/1.jpg" alt="Imagen del Guifo">
+            </div>
+                <div class="botonera">
+                    <button class="botonCancelar" onclick="location.reload()">Repetir Captura</button>
+                    <button class="botonComenzar separarBotones" id="subirGuifo">Subir Guifo</button>
+                </div>
+        </section>
+
+        <section class="buscador anchoVentanas" id="subiedoGuifo">
+            <h2 class="degrade letraContraste letraCajita botoncerrar">
+                Subiendo Guifo
+                <img onclick="botonCerrarVentana()" src="assets/close.svg" alt="cerrarVentanas">
+            </h2>
+                <div class="cuadroBlanco">
+                    <img src="assets/globe_img.png" alt="globo">
+                    <a class="estamosSubiendo"><b>Estamos subiendo tu Guifo</b></a>
+                    <a class="restante">Tiempo restante: 38 años algunos minutos</a>
+                </div>
+                <div class="botonera">
+                    <button onclick="botonCerrarVentana()" class="botonCancelar">Cancelar</button>
+                </div>
+        </section>
+
+        <section class="buscador anchoVentanas" id="subidoExito">
+            <h2 class="degrade letraContraste letraCajita">
+                Guifo Subido Con Exito
+                <img onclick="botonCerrarVentana()" src="assets/close.svg" alt="cerrarVentanas">
+            </h2>
+                <div>
+                    <div class="columnasSubidoExito">
+                        <img src="assets/2.png" id="guifoSubido" alt="Imagen del Guifo">
+                        <div class="derechaSubidoExito">
+                            <a class="textoCreadoExito"><b>Guifo creado con éxito</b></a>
+                            <button class="botonCancelar botonLargo" onclick="copiarPortapapeles()">Copiar Enlace Guifo</button>
+                            <button class="botonCancelar botonLargo" onclick="downloadPortapapeles()">Descargar Guifo</button>
+                            <p id="portapapeles"></p>
+                        </div>
+                    </div>
+                    <div class="botonera">
+                        <button class="botonComenzar" id="listoFinal">Listo</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="misGuifos" class="margen">
+            <h2 class="claros">Mis guifos</h2>
+            <!-- <button onclick="agregarCosas()">Agregar Cajas</button> -->
+            <div id="cajasMisGuifos" class="grillaSugerencias">    
+                <!-- <div class="cajita">
+                    <img class="imagenSugerencia" src="assets/1.jpg">
+                </div>
+                <div class="cajita">
+                    <img class="imagenSugerencia" src="assets/4.jpg">
+                </div>
+                <div class="cajita">
+                    <img class="imagenSugerencia" src="assets/4.jpg">
+                </div>
+                <div class="cajita">
+                    <img class="imagenSugerencia" src="assets/1.jpg">
+                </div> -->
+            </div>
+        </section>
+
+    <script src="scriptUpload.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>gif.OS</title>
+        <LINK id="estilos" REL=StyleSheet HREF="Style.css" TYPE="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- <header class="lineaArriba1"> -->
+        <header class="degrade letraContraste">
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </header>
+
+        <nav class="margen primerMargen">
+            <div class="logoBotones">
+                <img id="T1" src="assets/gifOF_logo.png" alt="Logo Normal">
+                <div>
+                    <button class="boton1" onclick= "location.href='upload.html'">Crear Guifos</button>
+                    <button class="boton1">Elegir Tema</button>
+                    <button onclick="botonDesplegable()" class="boton1 logoBoton"><img src="assets/dropdown.svg" alt="abajo"></button>
+                    <a class="boton2" href= "upload.html"><u>M</u>is Guifos</a>
+                </div>  
+            </div>
+            <div class="cajaDesplegable">
+                <div id="desplegable">
+                    <button onclick="botonDay()" class="botonDesplegable botonSailor"><u>S</u>ailor Day</button>
+                    <button onclick="botonNigth()" class="botonDesplegable">Sailor Nigth</button>
+                </div>
+            </div>
+            <div class="buscador">
+               <h2 class="degrade letraContraste letraCajita">
+                   Buscar
+               </h2>
+               <div id="formulario">
+                    <input placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <button id="botonBuscar"><img id="lupa" src="assets/lupa_inactive.svg" alt="lupa"> BUSCAR</button>
+               </div>
+            </div>
+            <div id="busquedaDesplegable">
+                <button id="botonSug1">Sugerencia Busqueda 1</button>
+                <button id="botonSug2">Sugerencia Busqueda 2</button>
+                <button id="botonSug3">Sugerencia Busqueda 3</button>
+            </div>
+            <div id="nuevosBotones">
+                <!-- <button class="agregarBoton">Agregar</button>     -->
+            </div>
+        </nav>
+
+        <section id="resutadoBusqueda" class="margen">
+            <h2 class="claros">Resutado de la Busqueda</h2>
+            <div class="grillaTendencias">
+                <div><img id="0busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda1"></div>
+                <div><img id="1busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda2"></div>
+                <div><img id="2busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda3"></div>
+                <div><img id="3busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda4"></div>
+                <div><img id="4busqueda" class="imagenTendencia" src="assets/4.jpg" alt="busqueda5"></div>
+                <div><img id="5busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda6"></div>
+                <div><img id="6busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda7"></div>
+                <div><img id="7busqueda" class="imagenTendencia" src="assets/3.jpg" alt="busqueda8"></div>
+            </div>
+        </section>
+
+        <section id="sugerencias" class="margen">
+            <h2 class="claros">Hoy te sugerimos:</h2>
+            <div class="grillaSugerencias">    
+                <div class="cajita">
+                    <h2 id="sugerencia1" class="degrade letraContraste letraCajita">#SailorMercury</h2>
+                    <img id="imagenSugerencia1" class="imagenSugerencia" src="assets/1.jpg" alt="sugerencia1">
+                    <button class="botonVerMas" id='verMas1'>Ver mas...</button>
+                    <div id="tagSugerencia1" class="degrade letraContraste letraCajita tagSugerencia">Una prueba</div>
+                </div>
+                <div class="cajita">
+                    <h2 id="sugerencia2" class="degrade letraContraste letraCajita">#SailorMercury</h2>
+                    <img id="imagenSugerencia2" class="imagenSugerencia" src="assets/4.jpg" alt="sugerencia2">
+                    <button class="botonVerMas" id='verMas2'>Ver mas...</button>
+                    <div id="tagSugerencia2" class="degrade letraContraste letraCajita tagSugerencia">Una prueba</div>
+                </div>
+                <div class="cajita">
+                    <h2 id="sugerencia3" class="degrade letraContraste letraCajita">#SailorMercury</h2>
+                    <img id="imagenSugerencia3" class="imagenSugerencia" src="assets/4.jpg" alt="sugerencia3">
+                    <button class="botonVerMas" id='verMas3'>Ver mas...</button>
+                    <div id="tagSugerencia3" class="degrade letraContraste letraCajita tagSugerencia">Una prueba</div>
+                </div>
+                <div class="cajita">
+                    <h2 id="sugerencia4" class="degrade letraContraste letraCajita">#SailorMercury</h2>
+                    <img id="imagenSugerencia4" class="imagenSugerencia" src="assets/1.jpg" alt="sugerencia4">
+                    <button class="botonVerMas" id='verMas4'>Ver mas...</button>
+                    <div id="tagSugerencia4" class="degrade letraContraste letraCajita tagSugerencia">Una prueba</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tendencias" class="margen">
+            <h2 class="claros">Tendencias</h2>
+            <div class="grillaTendencias">
+                <div><img id="0tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias1"></div>
+                <div><img id="1tendencia" class="imagenTendencia" src="https://tiroalcorazon.com/wp-content/uploads/2020/05/697b023b-64a5-49a0-8059-27b963453fb1.gif" alt="tendencias2"></div>
+                <div><img id="2tendencia" class="imagenTendencia" src="https://media3.giphy.com/media/RJzFUocOULuy5zDDya/giphy-preview.gif?cid=4a2c1a40hvx3y2mjuajan464nqw7a10j1t39fr8gdim0apr4&rid=giphy-preview.gif" alt="tendencias3"></div>
+                <div><img id="3tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias4"></div>
+                <div><img id="4tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias5"></div>
+                <div><img id="5tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias6"></div>
+                <div><img id="6tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias7"></div>
+                <div><img id="7tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias8"></div>
+                <div><img id="8tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias9"></div>
+                <div><img id="9tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias10"></div>
+                <div><img id="10tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias11"></div>
+                <div><img id="11tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias12"></div>
+                <div><img id="12tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias13"></div>
+                <div><img id="13tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias14"></div>
+                <div><img id="14tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias15"></div>
+                <div><img id="15tendencia" class="imagenTendencia" src="assets/4.jpg" alt="tendencias16"></div>
+                <div><img id="16tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias17"></div>
+                <div><img id="17tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias18"></div>
+                <div><img id="18tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias19"></div>
+                <div><img id="19tendencia" class="imagenTendencia" src="assets/3.jpg" alt="tendencias20"></div>
+            </div>
+        </section>
+        
+    <script src="script.js"></script>
+    </body>
+</html>
